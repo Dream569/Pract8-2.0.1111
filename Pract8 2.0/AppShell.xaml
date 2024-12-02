@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Pract8_2._0.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Pract8_2._0"
+    Shell.FlyoutBehavior="Disabled"
+    Title="Pract8_2._0">
+
+    <TabBar>
+        <Tab Title="Информация">
+            <ShellContent Title="Информация" ContentTemplate="{DataTemplate local:MainPage}" />
+        </Tab>
+        <Tab Title="Рейтинг">
+            <ShellContent Title="Рейтинг" ContentTemplate="{DataTemplate local:NewPage1}" />
+        </Tab>
+    </TabBar>
+
+</Shell>

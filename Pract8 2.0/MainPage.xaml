@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pract8_2._0.MainPage"
+             Title="NewPage">
+    <StackLayout>
+        <Label Text="Фамилия" FontSize="20"/>
+        <Entry x:Name="FIO1" Placeholder="Введите фамилию"/>
+
+        <Label Text="Имя" FontSize="20"/>
+        <Entry x:Name="FIO2" Placeholder="Введите имя"/>
+
+        <Label Text="Отчество" FontSize="20"/>
+        <Entry x:Name="FIO3" Placeholder="Введите отчество"/>
+
+        <Label Text="Пол" FontSize="20"/>
+        <Picker x:Name="Gender">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Мужской</x:String>
+                    <x:String>Женский</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Label Text="Возраст" FontSize="20"/>
+        <Entry x:Name="Age" Placeholder="Введите возраст" Keyboard="Numeric"/>
+
+        <Label Text="Телефон" FontSize="20"/>
+        <Entry x:Name="Tel" Placeholder="Введите телефон" Keyboard="Numeric"/>
+
+        <Button Text="Загрузить фото" Clicked="AddPhotoClick"/>
+        <Image x:Name="Photo" HeightRequest="200" WidthRequest="200" />
+
+        <Button Text="Сохранить" Clicked="SaweClick"/>
+        <Label x:Name="StatusLabel"/>
+        <Button Text="Отобразить эллемент" Clicked="Otobraz"/>
+    </StackLayout>
+</ContentPage>

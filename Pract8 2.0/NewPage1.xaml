@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pract8_2._0.NewPage1"
+             Title="NewPage1">
+    
+    <StackLayout Padding="20">
+        <Label Text="Информация о пользователе" FontSize="24" />
+        <ListView x:Name="lister" ItemTapped="lister_ItemTapped"/>
+        <Label x:Name="UserInfoLabel" FontSize="18" />
+        <Image x:Name="UserPhoto" HeightRequest="200" />
+        <Button Text="Обновление" Clicked="Button_Clicked"/>
+    </StackLayout>
+</ContentPage>
